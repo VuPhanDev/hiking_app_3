@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Explore"
+            android:textSize="20sp"
+            android:textColor="#2C2C2C"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2.05"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_border_white"
+                    tools:ignore="UselessParent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_ping"
+                            tools:ignore="ContentDescription" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking"
+                        android:textSize="12sp"
+                        android:textColor="#F09091"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aiguille Rousse"
+                        android:layout_marginStart="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#121D29"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_ping"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="3.08km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_location"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="13.49km"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_up"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="456m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_down"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1354m"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_clock"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="1h20"
+                            android:textSize="11sp"
+                            android:textColor="#121D29"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/ic_3_red"
+                            android:layout_weight="0.5"
+                            />
+
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Difficult"
+                            android:textSize="11sp"
+                            android:textColor="#EA2A30"
+                            android:fontFamily="@font/poppins_medium"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
