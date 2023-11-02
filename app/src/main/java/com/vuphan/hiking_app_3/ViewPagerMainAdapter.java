@@ -20,7 +20,7 @@ public class ViewPagerMainAdapter extends FragmentStateAdapter {
             case 1:
                 return new PingFragment();
             case 2:
-                return new CompassFragment();
+                return new MapsFragment();
             case 3:
                 return new PersonFragment();
             case 4:

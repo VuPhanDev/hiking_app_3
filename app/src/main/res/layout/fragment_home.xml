@@ -105,6 +105,7 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:orientation="vertical"
+            android:id="@+id/layout_find"
             >
             <TextView
                 android:layout_width="wrap_content"

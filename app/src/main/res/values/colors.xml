@@ -10,8 +10,8 @@
     <color name="colorControlHighlight">#00ffffff</color>
 
     <color name="base_text">#202E5C</color>
-    <color name="seekbar_thumb">#000080</color>
-    <color name="seekbar">#CD000080</color>
+    <color name="seekbar_thumb">#5A8FCE</color>
+    <color name="seekbar">#E6F5FE</color>
     <color name="greenCoin">#4FA977</color>
     <color name="redCoin">#EE6363</color>
     <color name="greenCoinClick">#804FA977</color>
