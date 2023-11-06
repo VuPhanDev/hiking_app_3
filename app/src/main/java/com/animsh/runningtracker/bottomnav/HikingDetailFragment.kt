@@ -15,7 +15,10 @@ class HikingDetailFragment : Fragment(R.layout.fragment_hiking_detail) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+    }
 
+    override fun onPause() {
+        super.onPause()
     }
 
 }

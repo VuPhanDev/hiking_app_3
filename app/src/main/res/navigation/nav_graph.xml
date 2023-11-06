@@ -8,7 +8,7 @@
     <action
         android:id="@+id/action_global_tracking_fragment"
         app:destination="@+id/trackingFragment"
-        app:enterAnim="@anim/enter_animation"
+        app:enterAnim="@anim/slide_up"
         app:launchSingleTop="true" />
 
 
@@ -67,7 +67,8 @@
         android:id="@+id/hikingDetailFragment"
         android:name="com.animsh.runningtracker.bottomnav.HikingDetailFragment"
         android:label="fragment_hiking_detail"
-       />
+       >
+    </fragment>
 
     <fragment
         android:id="@+id/menu_calender"
@@ -81,5 +82,11 @@
     <fragment
         android:id="@+id/menu_ping"
         android:name="com.animsh.runningtracker.bottomnav.PingFragment"
-        android:label="PingFragment" />
+        android:label="PingFragment" >
+        <action
+            android:id="@+id/action_menu_ping_to_hikingDetailFragment"
+            app:enterAnim="@anim/slide_up"
+            app:destination="@id/hikingDetailFragment" />
+
+    </fragment>
 </navigation>
